@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | AURA Parfums</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">AURA</a>
+    <div class="navbar-links">
+      <a href="index.html">Fragrances</a>
+      <a href="collections.html">Collections</a>
+      <a href="gifts.html">Gifts</a>
+      <a href="story.html">Our Story</a>
+    </div>
+    <div class="navbar-icons">
+      <a href="cart.html" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" class="active" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="checkout-layout">
+      <div class="checkout-main">
+        <h2 class="title-medium" style="margin-bottom: 2rem;">Your Shopping Bag</h2>
+        <div class="cart-items">
+          <div class="cart-item">
+            <img src="./assets/images/perfume_1.png" alt="Midnight Oud" class="cart-item-img" />
+            <div class="cart-item-details">
+              <h3 class="cart-item-title">Midnight Oud</h3>
+              <p class="cart-item-price">$ 295.00</p>
+              <p class="text-small" style="margin-bottom: 1rem;">100ml / Extrait de Parfum</p>
+              <div class="cart-qty"><button>-</button><span>1</span><button>+</button></div>
+            </div>
+            <button style="align-self: flex-start; background:none; border:none; cursor:pointer;" aria-label="Remove">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+
+          <div class="cart-item">
+            <img src="./assets/images/perfume_2.png" alt="Rose Velvet" class="cart-item-img" />
+            <div class="cart-item-details">
+              <h3 class="cart-item-title">Rose Velvet</h3>
+              <p class="cart-item-price">$ 250.00</p>
+              <p class="text-small" style="margin-bottom: 1rem;">50ml / Eau de Parfum</p>
+              <div class="cart-qty"><button>-</button><span>1</span><button>+</button></div>
+            </div>
+            <button style="align-self: flex-start; background:none; border:none; cursor:pointer;" aria-label="Remove">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="checkout-sidebar">
+        <h3 class="title-serif" style="margin-bottom: 2rem;">Order Summary</h3>
+        <div class="summary-row"><span>Subtotal</span><span>$ 545.00</span></div>
+        <div class="summary-row"><span>Shipping</span><span>Complimentary</span></div>
+        <div class="summary-row"><span>Taxes</span><span>Calculated at checkout</span></div>
+        <div class="summary-row summary-total"><span>Estimated Total</span><span>$ 545.00</span></div>
+        <a href="checkout.html" class="btn btn-primary" style="width: 100%; margin-top: 2rem;">Proceed to Checkout</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
